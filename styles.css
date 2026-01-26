@@ -1,0 +1,78 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+
+.hero {
+    height: 100vh; /* fixed relative to viewport */
+    background-image:  url('images/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+    font-size: 18px;
+    font-family: cursive;
+}
+.hero-title {
+    padding-top: 100px;
+    justify-content: end;
+    color: #023253;
+    text-shadow: 0 0 5px whitesmoke;
+    margin:0;
+}
+.info {
+    background-image: linear-gradient(#010101, grey);
+    background-size: cover;
+    height: max-content;
+    font-style: italic;
+    font-size: 30px;
+    color: #2A2E38;
+     text-shadow: 0 0 5px white;
+     margin: 0px;
+     padding-top: 70px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+     flex-direction: column;
+     align-items: center;
+     
+}
+.container img {
+    width: 400px;
+      transition: transform 0.3s;
+}
+.hover-image:hover{
+    transform: scale(1.1);  /* zoom effect */
+  filter: brightness(1.2); /* brighten */
+}
+.hover-text {
+     margin-top: 10px;
+  opacity: 0;                /* hidden by default */
+  transition: opacity 0.3s;  
+  font-size: 32px;
+  color: #333;
+  padding-top: 20px;
+}
+.wrapper:hover .hover-text {
+    opacity: 1;
+}
+#caption {
+    padding-top: 50px;
+}
+#guide-img {
+    width: 300px;
+    border-radius: 20px;
+}
