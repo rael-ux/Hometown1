@@ -10,69 +10,82 @@ DARK BLUE: #1D3557
 
 body {
     margin: 0;
-    text-align: center;
-}
-
-
-.hero {
-    height: 100vh; /* fixed relative to viewport */
-    background-image:  url('images/hero.png');
+    font-family: cursive;
+       height: 100vh;
+       width: 100vw;
+    background-image:  url('images/hero-landscaped1.png');
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     margin: 0px;
-    font-size: 18px;
-    font-family: cursive;
+    padding: 0px;
+    background-position: center;
 }
-.hero-title {
-    padding-top: 100px;
-    justify-content: end;
-    color: #023253;
-    text-shadow: 0 0 5px whitesmoke;
-    margin:0;
-}
-.info {
-    background-image: linear-gradient(#010101, grey);
-    background-size: cover;
-    height: max-content;
-    font-style: italic;
-    font-size: 30px;
-    color: #2A2E38;
-     text-shadow: 0 0 5px white;
-     margin: 0px;
-     padding-top: 70px;
-}
+
+
 
 .container {
     display: flex;
     gap: 20px;
-     flex-direction: column;
-     align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    
      
 }
 .container img {
-    width: 400px;
+    width: 20vh;
       transition: transform 0.3s;
 }
 .hover-image:hover{
-    transform: scale(1.1);  /* zoom effect */
+    transform: scale(1.3);  /* zoom effect */
   filter: brightness(1.2); /* brighten */
+
+  
 }
 .hover-text {
-     margin-top: 10px;
+    margin-top: 10px;
   opacity: 0;                /* hidden by default */
   transition: opacity 0.3s;  
-  font-size: 32px;
+  font-size: 80px;
   color: #333;
-  padding-top: 20px;
+  padding: 70px;
 }
 .wrapper:hover .hover-text {
     opacity: 1;
 }
-#caption {
-    padding-top: 50px;
-}
+
 #guide-img {
-    width: 300px;
+    width: 700px;
     border-radius: 20px;
+}
+.title {
+    padding-top: 200px;
+    color: #FBE1B2;
+    text-shadow: 0 0 5px black;
+    margin:0;
+    text-align: center;
+    font-size: 1.3vw;
+    max-width: 2104px;
+    
+}
+.options {
+    font-style: italic;
+    font-size: 1.5vw;
+    color: #2A2E38;
+    text-shadow: 0 0 5px white;
+    padding: 300px 0px 0px 400px;
+    width: 30vh;
+    align-content: center;
+    }
+#subtitle {
+    padding-left: 0px;
+    margin-left: -200px;
+}
+.guide {
+     font-style: italic;
+    font-size: 1vw;
+    color: gray;
+    text-shadow: 0 0 5px white;
+    align-content: end;
+    max-width: 800px;
+    padding-right: 500px;
 }
